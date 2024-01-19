@@ -1,0 +1,30 @@
+/* @TODO - Organize into files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../fonts/archia/_fonts.scss";
+@import "../fonts/optimistic/_fonts.scss";
+
+@import "https://use.typekit.net/zud5ysv.css";
+
+$archia: "Archia", sans-serif;
+$optimistic: "Optimistic", sans-serif;
+$optimistic-display: "Optimistic Display", sans-serif;
+$neusa-next-std: "Neusa Next Std", sans-serif;
+$usual: "Usual", sans-serif;
+
+$font-stack-sans: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-heading: $optimistic-display /* $neusa-next-std */, $font-stack-sans;
+$font-sans: $optimistic /* $usual */, $font-stack-sans;
+$font-body: $font-sans;
+
+body {
+    @apply text-gray-500;
+    font-family: $font-body !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading !important;
+}
